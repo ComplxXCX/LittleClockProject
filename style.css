@@ -1,0 +1,28 @@
+body {
+    background: #334155;
+}
+
+.clock {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: #BE123C;
+    text-shadow: 1px 3px black;
+    
+
+    font-size: 70px;
+    font-family: monospace;
+    letter-spacing: 7px;
+    animation: glow 1s ease-in-out infinite alternate;
+    
+}
+@-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 5px rgb(7, 7, 7), 0 0 5px rgb(0, 0, 0), 0 0 10px #e600005e, 0 0 10prgba(230, 0, 0, 0.212)00, 0 0 10px #e600006b, 0 0 10px #e600003b, 0 0 10prgba(230, 0, 0, 0.418)00;
+    }
+    
+    to {
+      text-shadow: 0 0 5px rgb(0, 0, 0), 0 0 5px #ff4d4d, 0 0 5px #ff4d4d63, 0 0 5px #ff4d4d, 0 0 5px #ff4d4d52, 0 0 5px #ff4d4d41, 0 0 80px #ff4d4d54;
+    }
+  }
